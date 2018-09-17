@@ -10,8 +10,10 @@ Run `grunt` for building and `grunt serve` for preview.
 Note that grunt does not seem to run bower so the correct sequence is 
 
 ```
+npm install
 bower install
 grunt
+grunt serve
 ```
 
 ## Testing
