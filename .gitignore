@@ -63,3 +63,7 @@ typings/
 #style builder
 .tmp
 
+#distribution
+dist
+
+
