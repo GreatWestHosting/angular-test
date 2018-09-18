@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/customers', {
+        templateUrl: 'views/customers.html',
+        controller: 'CustomersCtrl',
+        controllerAs: 'customers'
+      })
       .when('/login', {
         templateUrl: 'views/login.html',
         //controller: 'LoginCtrl',
