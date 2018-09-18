@@ -1,0 +1,20 @@
+<div>
+<label for="days">Days</label>
+<input type="number" id="days" ng-model="quote.days" placeholder="Enter number of days you need me">
+<br>
+<label for="hours">Hours/Day</label>
+<input type="number" id="hours" ng-model="quote.hours" placeholder="Enter number of hours per day you need me">
+<br>
+<label for="rate">Hourly Rate</label>
+<input type="number" id="rate" ng-model="quote.rate" placeholder="Enter hourly rate">
+<br>
+<span>Sub-Total</span>
+{{quote.rate && quote.hours ? quote.hours * quote.days * quote.rate : 0 | currency}}
+<br>
+<span>G.S.T.</span>
+{{quote.rate && quote.hours ? quote.GST():0 | currency}}
+<br>
+<span>Total</span>
+<span>{{ quote.rate && quote.hours ? quote.total():0 | currency }}</span>
+</div>
+

@@ -34,6 +34,11 @@ angular
         controller: 'CustomersCtrl',
         controllerAs: 'customers'
       })
+      .when('/calculator', {
+        templateUrl: 'views/calculator.html',
+        controller: 'CalculatorCtrl',
+        controllerAs: 'calculator'
+      })
       .when('/login', {
         templateUrl: 'views/login.html',
         //controller: 'LoginCtrl',
