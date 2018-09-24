@@ -1,6 +1,13 @@
-
-<ul>
-  <li ng-repeat="x in myData">
-    {{ x.Name + ', ' + x.Age}}<br>{{x.City + ', ' + x.Country }}
-  </li>
-</ul>
+<div>
+  <div ng-repeat="x in myData">
+  <span><input type="checkbox" ng-model="x.done"> </span>
+  <span editable-text="x.Name">{{x.Name}}</span>
+  |
+  <span editable-text="x.City">{{x.City}}</span>
+  |
+  <span editable-text="x.Country">{{x.Country}}</span>
+  </div>
+</div>
+<hr>
+<p><button ng-click="remove()">Remove marked</button></p>
+<hr>
