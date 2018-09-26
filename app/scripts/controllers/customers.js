@@ -9,7 +9,7 @@
  */
 angular.module('angTestApp')
   .controller('CustomersCtrl', function($scope, $http) {
-	$http.get('customers.json').then(function (response) {
+	$http.get('customers').then(function (response) {
 	  $scope.myData = response.data.records;
 	  console.log($scope.myData);
 	}); // end get

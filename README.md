@@ -16,6 +16,9 @@ grunt
 grunt serve
 ```
 
+Note that grunt serve will only serve the source files, not the compiled files
+Running ```grunt serve:dist``` changes the run target and forces a build to occur
+
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
@@ -37,5 +40,10 @@ Note that the ! mark is to indicate server side vs client side processing (URL t
 
 See discussion at https://stackoverflow.com/questions/41272314/angularjs-all-slashes-in-url-changed-to-2f
 Also documented https://docs.angularjs.org/guide/migration#migrating-from-1-5-to-1-6
+
+## NodeJS Integration
+
+We want to run nodejs after grunt builds the directory, and have grunt continually update the dist folder
+The *postinstall* npm task seems to fit the bill, by adding postinstall to scripts under package.json
 
 
