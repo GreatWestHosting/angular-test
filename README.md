@@ -38,4 +38,4 @@ Note that the ! mark is to indicate server side vs client side processing (URL t
 See discussion at https://stackoverflow.com/questions/41272314/angularjs-all-slashes-in-url-changed-to-2f
 Also documented https://docs.angularjs.org/guide/migration#migrating-from-1-5-to-1-6
 
-Last updated 2018-Sep-17
+
