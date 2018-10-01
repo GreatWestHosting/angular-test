@@ -41,11 +41,12 @@
   },
   "scripts": {
     "prestart": "grunt build",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "karma start test\\karma.conf.js"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "mongodb": "^3.1.6"
+    "mongodb": "^3.1.6",
+    "nodemon": "^1.18.4"
   }
 }
