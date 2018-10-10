@@ -36,7 +36,7 @@ angular
 		  })
 		  .when('/customers', {
 			templateUrl: 'views/customers.html',
-			controller: 'CustomersCtrl',
+			controller: 'customersCtrl',
 			controllerAs: 'customers'
 		  })
 		  .when('/calculator', {

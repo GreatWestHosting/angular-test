@@ -27,9 +27,11 @@ MongoClient.connect(
 //	  db.collection("customer").find({}).toArray( (err,docs ) => { cust = docs;});
 	  db.collection("customer").find({}).toArray( function(err,docs ) {
 	    // When toArray finished do the following:
-	    cust = docs;}
+	    cust = docs;
+		conn.close();
+		return;
+		}
 	  );
-	  console.log(cust);
       conn.close();
   }
 );
