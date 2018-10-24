@@ -74,7 +74,7 @@ Hex strings can be reverted back to binary (for example to perform queries) with
         db.collection("customer").find({'_id':id}).toArray(function (err, docs) {
             if (err) {
                 res.send(err);
-                return console.log(err)
+                return console.log(err);
             }
             
             console.log(id);
